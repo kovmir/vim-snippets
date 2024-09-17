@@ -1,13 +1,15 @@
 ## Main
 # main
 snippet main
-	int main(int argc, char *argv[])
+	int
+	main(int argc, char *argv[])
 	{
 		${0}
 	}
 # main(void)
 snippet mainn
-	int main(void)
+	int
+	main(void)
 	{
 		${0}
 	}
@@ -151,13 +153,15 @@ snippet do
 ## Functions
 # function definition
 snippet fun
-	${1:void} ${2:function_name}(${3})
+	${1:void}
+	${2:function_name}(${3})
 	{
 		${4}
 	}
 # function definition with zero parameters
 snippet fun0
-	${1:void} ${2:function_name}()
+	${1:void}
+	${2:function_name}()
 	{
 		${3}
 	}
@@ -169,13 +173,15 @@ snippet dfun0
 	 *
 	 * \return ${3:Return parameter description}
 	 */
-	${4:void} ${5:function_name}()
+	${4:void}
+	${5:function_name}()
 	{
 		${6}
 	}
 # function definition with one parameter
 snippet fun1
-	${1:void} ${2:function_name}(${3:Type} ${4:Parameter})
+	${1:void}
+	${2:function_name}(${3:Type} ${4:Parameter})
 	{
 		${5}
 	}
@@ -188,13 +194,15 @@ snippet dfun1
 	 * \param $3 ${4:Parameter description}
 	 * \return ${5:Return parameter description}
 	 */
-	${6:void} ${7:function_name}(${8:Type} ${3:Parameter})
+	${6:void}
+	${7:function_name}(${8:Type} ${3:Parameter})
 	{
 		${9}
 	}
 # function definition with two parameters
 snippet fun2
-	${1:void} ${2:function_name}(${3:Type} ${4:Parameter}, ${5:Type} ${6:Parameter})
+	${1:void}
+	${2:function_name}(${3:Type} ${4:Parameter}, ${5:Type} ${6:Parameter})
 	{
 		${7}
 	}
@@ -208,13 +216,15 @@ snippet dfun2
 	 * \param $5 ${6:Parameter description}
 	 * \return ${7:Return parameter description}
 	 */
-	${8:void} ${9:function_name}(${10:Type} ${3:Parameter}, ${11:Type} ${5:Parameter})
+	${8:void}
+	${9:function_name}(${10:Type} ${3:Parameter}, ${11:Type} ${5:Parameter})
 	{
 		${12}
 	}
 # function definition with three parameters
 snippet fun3
-	${1:void} ${2:function_name}(${3:Type} ${4:Parameter}, ${5:Type} ${6:Parameter}, ${7:Type} ${8:Parameter})
+	${1:void}
+	${2:function_name}(${3:Type} ${4:Parameter}, ${5:Type} ${6:Parameter}, ${7:Type} ${8:Parameter})
 	{
 		${9}
 	}
@@ -229,13 +239,16 @@ snippet dfun3
 	 * \param $7 ${8:Parameter description}
 	 * \return ${9:Return parameter description}
 	 */
-	${10:void} ${11:function_name}(${12:Type} ${3:Parameter}, ${13:Type} ${5:Parameter}, ${14:Type} ${7:Parameter})
+	${10:void}
+	${11:function_name}(${12:Type} ${3:Parameter}, ${13:Type} ${5:Parameter}, ${14:Type} ${7:Parameter})
 	{
 		${15}
 	}
 # function declaration
 snippet fund
 	${1:void} ${2:function_name}(${3});
+snippet sfund
+	static ${1:void} ${2:function_name}(${3});
 ##
 ## Types
 # typedef
